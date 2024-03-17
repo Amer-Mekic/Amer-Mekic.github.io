@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Honk&family=Noto+Color+Emoji&family=Vollkorn&display=swap');
+
+.title-style{
+	background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);    width:100;
+}
+.am{
+	font-family: 'Noto Color Emoji', sans-serif;
+	font-size:larger;
+}
+.avatar {
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border: 5px white solid;
+	border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+	img { width: 100%; height: auto; }
+}
+
+#photo .container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.content>h1 {
+	font-size: 24px;
+	margin: 15px 0 0 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: black;
+}
+#title span{
+	font-family: 'Noto Color Emoji', sans-serif;
+}
+.content>p {
+	font-size: 15px;
+    margin-top:8px;
+	font-weight: light;
+	color: #333333;
+}
+
+p>span {
+	font-size: 12px;
+	color: black;
+	text-decoration: none;
+	margin: 0 10px;
+	transition: all 0.4s ease-in-out;
+}
+
+#about-me{
+    display:flex;
+    width:100;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+#about-me * h1{
+    font-size: x-large;
+    padding: 5px;
+    font-weight: bold;
+}
