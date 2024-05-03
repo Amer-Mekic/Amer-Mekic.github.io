@@ -5,23 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="./styles.css" rel="stylesheet">
 </head>
 <body>
-    <section id="title" class="title-style">
+    
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark px-5 fs-5" role="navigation" id="navbar">
+        <div class="container-fluid">
+            <h1 class="honk pt-2 bg-warning">Portfolio.</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#hero">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#skills">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#projects">Recent Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <section id="hero" class="title-style">
       <div class="container col-xxl-8 px-4 py-5">
         <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
           <div class="col-10 col-sm-8 col-lg-6">
-            <img src="..." class="d-block mx-lg-auto img-fluid" alt="..." width="700" height="500" loading="lazy">
+            <img src="./images/11669400_20945431.svg" id="svg-image" class="d-block mx-lg-auto img-fluid" alt="Image" width="700" height="500" loading="lazy">
           </div>
           <div class="col-lg-6">
-            <h1 class="display-5 fw-bold text-body-emphasis mb-3">Hi,<br><h1 class="display-5 fw-bold text-body-emphasis mb-3">I'm Amer Mekić<span class="am"> 👋🏼</span></h1></h1>
+            <h1 class="display-5 fw-bold text-body-emphasis mb-3">Hi,<br><h1 class="display-5 fw-bold text-body-emphasis mb-3 typewriter">I'm Amer Mekić<span class="am"> 👋🏼</span></h1></h1>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="info">
+    <section id="about">
       <div class="my-5">
         <div class="p-5 text-center bg-body-tertiary">
           <div class="container py-5">
@@ -40,7 +70,7 @@
       </div>
     </section>
 
-    <section id="about-me">
+    <section id="skills" style="margin-top: 250px; height:500px">
       <div class="container text-center">
         <h1 class="text-body-emphasis mt-4 fs-3">Skills:</h1>
         <div class="row">
@@ -83,65 +113,59 @@
       </div>
     </section>
 
-    <section class="projects" id="projects">
+    <section class="projects my-5" id="projects">
       <h2 class="projects-title">Some of my Recent Projects</h2>
-      <div class="projects-container row">
-        <div class="project-container project-card col-lg-4">
+      <div class="projects-container row w-100">
+        <div class="project-container project-card col-lg-4" style="max-width: 100%;">
           <img
-            src="./moviebase.png"
+            src="./images/moviebase.png"
             alt="maviebase"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">MovieBase</h3>
+          <h3 class="project-title mt-2">MovieBase</h3>
           <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+            Fullstack web app built using Node.js, Express, PostgreSQL, EJS and CSS
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <a href="https://github.com/Amer-Mekic/Movie-Base" target="_blank" class="project-link">Check it Out</a>
         </div>
         <div class="project-container project-card col-lg-4">
           <img
-            src="./blog.png"
+            src="./images/blog.png"
             alt="blog"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">CRUD Blog</h3>
+          <h3 class="project-title mt-2">CRUD Blog</h3>
           <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+            Blog web application built using Node.js, Express, EJS and Bootstrap/CSS.
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <a href="https://github.com/Amer-Mekic/Blog-web-app" target="_blank" class="project-link">Check it Out</a>
         </div>
         <div class="project-container project-card col-lg-4">
           <img
-            src=""
-            alt="Watson Assistant"
+          src="./images/florence.png"
+          alt="Watson Assistant"
             loading="lazy"
             class="project-pic"
           />
-          <h3 class="project-title">IBM Watson Assistant</h3>
+          <h3 class="project-title mt-2">IBM Watson Assistant</h3>
           <p class="project-details">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-            ratione vel inventore labore commodi modi quos culpa aut saepe!
-            Alias!
+            Trained IBM Watson Assistant Instance for a fictional florist shop
           </p>
-          <a href="#" target="_blank" class="project-link">Check it Out</a>
+          <a href="https://web-chat.global.assistant.watson.appdomain.cloud/preview.html?backgroundImageURL=https%3A%2F%2Feu-de.assistant.watson.cloud.ibm.com%2Fpublic%2Fimages%2Fupx-90f36db6-98a1-4c99-b70c-a7c500c0c3fc%3A%3A7e70cab8-cb63-4fbf-ba08-67341a27106a&integrationID=0a084c83-3b69-4948-8a87-d6740b67f5d3&region=eu-de&serviceInstanceID=90f36db6-98a1-4c99-b70c-a7c500c0c3fc" target="_blank" class="project-link">Check it Out</a>
         </div>
       </div>
     </section>
 
-    <section id="photo">
+    <section id="contact">
         <div class="my-5">
-            <div class="p-5 text-center bg-body-tertiary">
-              <div class="container py-5">
-                    <div class="avatar">
-                            <img src="..." alt="..." />
+            <div class="p-5 text-center bg-body-tertiary d-flex justify-content-center">
+              <div class="container py-5 row d-flex justify-content-center">
+                    <div class="avatar col-12">
+                      <img src="./images/contact-3018.svg" alt="Contact image" style="width: 100%; height: 100%;">
                     </div>
-                    <div class="content">
+                    <div class="content col-12">
                         <h1>Let's get in contact!</h1>
                         <p>Follow me on:</p>
                         <p>
@@ -158,13 +182,11 @@
           </div>
     </section>
 
-    <section id="footer">
         <div class="container">
             <footer class="py-3"><hr>
               <p class="text-center text-body-secondary">© 2024 Amer Mekić</p>
             </footer>
           </div>
-    </section>
 
 </body>
 </html>
